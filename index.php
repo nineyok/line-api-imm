@@ -77,7 +77,7 @@ if($strchk[0]=="$"){
                 . "*ด่านเข้า : " . $checkpoint_in . "\r\n"
 				. "วันที่เดินทาง เข้า : " . $Record_date_in . "\r\n"
                 . "*ด่านออก : " . $checkpoint_out . "\r\n"
-                . "วันที่เดินทาง ออก : " . $Record_date_out;
+                . "วันที่เดินทาง ออก : " . $Record_date_out.$id;
 		
 		  if($name!=""){
                       $arrPostData = array();
