@@ -12,8 +12,9 @@ $strexp = isset($_REQUEST['strexp']) ? $_REQUEST['strexp'] : '';
 $strexp = $arrJson['events'][0]['message']['text'];
 
    $id = $arrJson['events'][0]['source']['groupId'];
+   $u_id = $arrJson['events'][0]['source']['userId'];
    
-   //if ($id == "Cc7400808e50a43c67c8672750581723b") {
+   //if ($id == "Cfa5017b98880a8eea6010f86aa2421d7") {
 
 $strchk = str_split($strexp);
 
@@ -77,7 +78,7 @@ if($strchk[0]=="$"){
                 . "*ด่านเข้า : " . $checkpoint_in . "\r\n"
 				. "วันที่เดินทาง เข้า : " . $Record_date_in . "\r\n"
                 . "*ด่านออก : " . $checkpoint_out . "\r\n"
-                . "วันที่เดินทาง ออก : " . $Record_date_out.$id;
+                . "วันที่เดินทาง ออก : " . $Record_date_out.$u_id;
 		
 		  if($name!=""){
                       $arrPostData = array();
