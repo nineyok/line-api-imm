@@ -61,7 +61,8 @@ if($strchk[0]=="$"){
 	    $name = $arrbn_id[1]; //ชื่อ-นามสกุล
         $sex = $arrbn_id[2]; // เพศ
 		$nationality = $arrbn_id[3];  //สัญชาติ
-        $birthday = substr($arrbn_id[4], 2); // วันเดือนปีเกิด
+        //$birthday = substr($arrbn_id[4], 2); // วันเดือนปีเกิด
+		     $birthday = $arrbn_id[4]; // วันเดือนปีเกิด
 		$visa_type = $arrbn_id[5]; // ประเภทวีซ่า
 		$flight_no = $arrbn_id[6]; // เที่ยวบิน
 		$checkpoint_in = $arrbn_id[7]; // ด่านเข้า
